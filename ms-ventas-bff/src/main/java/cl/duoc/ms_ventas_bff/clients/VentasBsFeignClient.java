@@ -14,7 +14,7 @@ import cl.duoc.ms_ventas_bff.model.dto.PedidoDTO;
 public interface VentasBsFeignClient {
 
     @GetMapping("/{id}")
-    public ResponseEntity<PedidoDTO > findSalesById(@PathVariable("id") Long id);
+    public ResponseEntity<PedidoDTO > getVentasById(@PathVariable("id") Long id);
 
     @PostMapping("/pedidos")
     public HttpEntity<PedidoDTO> crearPedido(@RequestBody PedidoDTO pedidoDTO);

@@ -10,8 +10,8 @@ public class VentasService {
     @Autowired
     VentasBsFeignClient ventasBsFeignClient;
 
-    public PedidoDTO getSalesById(Long id){
-        return ventasBsFeignClient.findSalesById(id).getBody();
+    public PedidoDTO getVentasById(Long id){
+        return ventasBsFeignClient.getVentasById(id).getBody();
     }
 
 
